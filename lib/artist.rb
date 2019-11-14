@@ -18,12 +18,13 @@ class Artist
   end
 
   def genres
-    Song.all.select do |song|
-      song.genre
+    songs.map do |meal|
+    meal.waiter
     end
   end
 
   def new_song(name, genre)
     Song.new(name, self, genre)
   end
+
 end
